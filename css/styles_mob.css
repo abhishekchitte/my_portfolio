@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.2;
+}
+
+header {
+    background-color: #29427e;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+
+}
+
+#experiences .company {
+    margin-bottom: 15px;
+}
+
+.company {
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title, .company-and-tenure {
+    flex: 1;
+}
+
+.company-and-tenure {
+    text-align: right;
+}
+
+ul {
+    margin-top: 15px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    flex-basis: 27%; /* Adjusts the width of each project */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f6f8fb; /* Optional: Adds background color */
+    border-radius: 10px; /* Optional: Rounds the corners of the project box */
+    overflow: hidden; /* Ensures the image doesn't overflow the rounded corners */
+}
+
+.project img {
+    width: calc(100% - 40px); /* Adjusts the width of the image to fit within the padding */
+    height: auto;
+    margin: 0 20px 10px 20px; /* Adds margin to the sides and bottom of the image */
+    border-bottom: 1px solid #ddd; /* Optional: Adds a border under the image */
+}
+
+.project a:hover img {
+    transform: scale(1.05); /* Scale up the image slightly on hover */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+footer {
+    background-color: #29427e;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+/* ... other existing styles ... */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Adjust padding and layout for smaller screens */
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-and-tenure {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-basis: auto; /* Takes the full width */
+    }
+
+    header h1, section h2 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    .project img {
+        width: 90%; /* Adjust image width */
+        margin: 0 auto; /* Center align image */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    header h1, section h2 {
+        font-size: 1.2em;
+    }
+}
